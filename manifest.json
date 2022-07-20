@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Meet PTT",
+    "description": "Meet push to talk",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "meetptt.js"
+            ],
+            "css": [
+            ],
+            "matches": [
+                "https://meet.google.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
